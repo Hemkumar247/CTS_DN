@@ -1,38 +1,11 @@
--- Cognizant DN 5.0 Python FSE
--- Module 3: Database Integration
--- Hands-On 1: Schema Design & Core SQL
--- Submitted by: Vitta Hem Kumar
-
 -- ============================================================================
 -- 1. Database Creation
 -- ============================================================================
--- Drop database if it already exists to allow clean re-runs
+
 DROP DATABASE IF EXISTS college_db;
 CREATE DATABASE college_db;
 USE college_db;
 
--- ============================================================================
--- Normalization Explanation Comments
--- ============================================================================
--- 1NF (First Normal Form):
--- The relational schema is design-compliant with 1NF. All table columns store 
--- atomic (indivisible) values, and there are no repeating groups or arrays. 
--- Each table has a unique primary key to identify rows uniquely.
-
--- 2NF (Second Normal Form):
--- The schema satisfies 2NF by meeting all 1NF rules and ensuring that every 
--- non-key attribute is fully functionally dependent on the primary key. 
--- There are no partial dependencies as all primary keys are single-column IDs.
-
--- 3NF (Third Normal Form):
--- The schema satisfies 3NF because it is in 2NF and contains no transitive 
--- dependencies. Non-key attributes depend strictly on the primary key and 
--- not on any other non-key attributes (e.g., department name and head of 
--- department depend only on the department ID, not on student or course IDs).
-
--- ============================================================================
--- 2. Table Creation with Constraints
--- ============================================================================
 
 -- Table 1: Departments
 CREATE TABLE departments (
