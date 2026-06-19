@@ -1,0 +1,7 @@
+sqlalchemy
+psycopg2-binary
+mysql-connector-python
+pymongo
+flask-sqlalchemy
+alembic
+python-dotenv
