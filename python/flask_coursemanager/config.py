@@ -1,5 +1,5 @@
 class Config:
-    SECRET_KEY = 'dev-secret-key-change-in-production'
+    SECRET_KEY = 'dev-secret-key'
     DEBUG = True
-    # Placeholder for database URI for the next Hands-On
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///coursemanager.db'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///flask_coursemanager.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
